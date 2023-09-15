@@ -1,0 +1,107 @@
+{% extends "header.html" %}
+{% block content %}
+<div class="row">
+        <div class="sidebar col-md-4">
+            <!-- Sidebar content here -->
+            <div class="sidebar-section">
+                <h3><i class="fas fa-list-ul"></i> Categories</h3>
+                <ul class="category-list">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Programming</a></li>
+                    <li><a href="#">Front-end</a></li>
+                    <li><a href="#">Back-end</a></li>
+                    <li><a href="#">UI/UX</a></li>
+                    <li><a href="#">Responsive Design</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3><i class="fas fa-fire"></i> Popular Tutorials</h3>
+                <ul class="popular-list">
+                    <li><a href="#">Getting Started with HTML</a></li>
+                    <li><a href="#">Mastering CSS Layouts</a></li>
+                    <li><a href="#">JavaScript Fundamentals</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3><i class="fas fa-tags"></i> Tags</h3>
+                <ul class="tag-list">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <!-- Featured Tutorials -->
+            <h2 class="section-title"><i class="fas fa-star"></i> Featured Tutorials</h2>
+            <div class="card-deck">
+                <div class="card featured-card">
+                    <div class="card-body">
+                        <h5 class="card-title tutorial-title">Web Design Masterclass</h5>
+                        <p class="card-text excerpt">Learn the art of creating stunning web designs from scratch.</p>
+                        <p class="card-text info">Articles: 15 &nbsp; Loves: 50 &nbsp; Comments: 10 &nbsp; Published: August 20, 2023</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Featured Tutorial</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Latest Tutorials List -->
+            <h2 class="section-title"><i class="fas fa-book"></i> Latest Tutorials</h2>
+            <ul class="list-group latest-tutorials-list">
+                <li class="list-group-item">
+                    <a href="#" class="tutorial-link">
+                        <h5 class="tutorial-title">Creating Responsive Websites</h5>
+                        <p class="excerpt">Learn how to design websites that look great on all devices.</p>
+                        <p class="info">Articles: 8 &nbsp; Loves: 20 &nbsp; Comments: 3 &nbsp; Published: August 14, 2023</p>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#" class="tutorial-link">
+                        <h5 class="tutorial-title">Mastering CSS Grid Layouts</h5>
+                        <p class="excerpt">Unlock the power of CSS Grid for advanced layouts.</p>
+                        <p class="info">Articles: 12 &nbsp; Loves: 35 &nbsp; Comments: 8 &nbsp; Published: August 12, 2023</p>
+                    </a>
+                </li>
+                <!-- ... (Tambahkan konten lainnya) ... -->
+            </ul>
+            <a href="#" class="btn btn-primary all-tutorials-btn"><i class="fas fa-list"></i> Browse All Tutorials</a>
+
+            <!-- Newsletter Signup -->
+            <div class="newsletter-container">
+                <h2 class="section-title"><i class="fas fa-envelope"></i> Newsletter Signup</h2>
+                <p>Subscribe to our newsletter to receive updates and new tutorial notifications.</p>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Articles -->
+            <div class="related-articles">
+                <h2 class="section-title"><i class="fas fa-link"></i> Related Articles</h2>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#">Advanced CSS Techniques</a></li>
+                    <li class="list-group-item"><a href="#">JavaScript Best Practices</a></li>
+                    <li class="list-group-item"><a href="#">Introduction to Responsive Design</a></li>
+                </ul>
+            </div>
+
+            <!-- Featured Instructor/Author -->
+            <div class="featured-instructor">
+                <h2 class="section-title"><i class="fas fa-user"></i> Featured Instructor/Author</h2>
+                <div class="instructor-card">
+                    <img src="niko-milala.jpg" alt="Niko Milala">
+                    <h3>Niko Milala</h3>
+                    <p>Web Developer &amp; Designer</p>
+                    <p>Join Niko's tutorials to master the art of modern web development.</p>
+                    <a href="#" class="btn btn-primary">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

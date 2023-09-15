@@ -1,0 +1,378 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+.section-title {
+    margin-top: 20px;
+}
+
+/* Navigation */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Search Styles */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search-icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-input {
+    display: none;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: width 0.3s ease-in-out;
+}
+
+.search-btn {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Account Menu Styles */
+.account-menu .dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Styles */
+.sidebar-section h3 {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-section h3 i {
+    margin-right: 10px;
+}
+
+.category-list,
+.popular-list,
+.tag-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.category-list a,
+.popular-list a,
+.tag-list a {
+    text-decoration: none;
+    color: #333;
+}
+
+.category-list li,
+.popular-list li,
+.tag-list li {
+    margin-bottom: 5px;
+}
+
+/* Featured Tutorials Styles */
+.featured-card {
+    background-color: #f9fbe7;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.featured-card:hover {
+    transform: translateY(-5px);
+    background-color: #f0f4c3;
+}
+
+.featured-card .card-footer {
+    background-color: #f9fbe7;
+    border-top: none;
+    text-align: right;
+}
+
+/* Latest Tutorials List Styles */
+.latest-tutorials-list .tutorial-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.latest-tutorials-list .tutorial-link:hover {
+    background-color: #f8f9fa;
+}
+
+.latest-tutorials-list .list-group-item {
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.latest-tutorials-list .tutorial-title {
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+
+.latest-tutorials-list .excerpt {
+    margin-bottom: 5px;
+}
+
+/* All Tutorials Button Styles */
+.all-tutorials-btn {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* Newsletter Styles */
+.newsletter-container {
+    margin-top: 30px;
+}
+
+.newsletter-container p {
+    margin-bottom: 15px;
+}
+
+/* Related Articles Styles */
+.related-articles {
+    margin-top: 30px;
+}
+
+.related-articles .section-title {
+    margin-bottom: 15px;
+}
+
+.related-articles .list-group-item {
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.related-articles a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Featured Instructor Styles */
+.featured-instructor {
+    margin-top: 30px;
+}
+
+.featured-instructor .section-title {
+    margin-bottom: 15px;
+}
+
+.instructor-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.instructor-card img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.instructor-card h3 {
+    margin-top: 0;
+}
+
+.instructor-card p {
+    margin-bottom: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .navbar-nav {
+        margin-top: 10px;
+    }
+    .search-container {
+        margin-left: 0;
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #search {
+        margin-bottom: 10px;
+    }
+    .account-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 0;
+    }
+    .container-fluid {
+        padding: 0 15px;
+    }
+    .card-deck {
+        flex-direction: column;
+    }
+    .featured-card {
+        margin-bottom: 20px;
+    }
+    .featured-instructor .instructor-card {
+        padding: 10px;
+    }
+}
+/* ... (Existing CSS styles) ... */
+
+
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar .stage-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar .stage-list li {
+    margin-bottom: 10px;
+}
+
+.sidebar .stage-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.sidebar .stage-link:hover {
+    background-color: #f8f9fa;
+}
+
+/* Single Tutorial Content Styles */
+.single-tutorial {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.tutorial-title {
+    margin-top: 0;
+}
+
+.tutorial-info {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.tutorial-content img {
+    max-width: 100%;
+}
+
+.tutorial-interactions {
+    margin-top: 20px;
+}
+
+.favorite-btn, .comment-btn {
+    margin-right: 10px;
+}
+
+/* Breadcrumb Navigation Styles */
+.breadcrumb-navigation {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #888;
+}
+
+/* Table of Contents Styles */
+.table-of-contents {
+    margin-top: 20px;
+}
+
+.content-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content-list li {
+    margin-bottom: 5px;
+}
+
+/* Exercise Challenge Styles */
+.tutorial-exercise {
+    margin-top: 20px;
+}
+
+/* Video Tutorial Styles */
+.tutorial-video {
+    margin-top: 20px;
+}
+
+/* Download Resources Styles */
+.download-resources {
+    margin-top: 20px;
+}
+
+/* Discussion Section Styles */
+.discussion-section {
+    margin-top: 20px;
+}
+
+/* Social Sharing Styles */
+.social-sharing {
+    margin-top: 20px;
+}
+
+.social-icons {
+    list-style: none;
+    padding-left: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+}
+
